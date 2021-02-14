@@ -12,12 +12,15 @@ const Layout = ({ children, title = '프론트엔드 개발자 조성민의 포�
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
+      <meta lang="kr" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header>
+      <h1> this is header </h1>
     </header>
     {children}
     <footer>
+      <h1> this is footer </h1>
     </footer>
   </div>
 )

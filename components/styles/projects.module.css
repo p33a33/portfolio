@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    animation: titleRender;
+    animation-delay: 1.5s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectOne {
+    background: lightgray;
+    width: 30vw;
+    height: 30vh;
+    opacity: 0;
+    animation: projectRender;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.projectTwo {
+    background: lightgray;
+    width: 30vw;
+    height: 30vh;
+    opacity: 0;
+    animation: projectRender;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes titleRender {
+    from {
+        transform: translate(0%, 0%);
+    }
+    to {
+        transform:translate(-35vw, -30vh)
+    }
+}
+
+@keyframes projectRender {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
