@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 90vh;
+}
+
+.title {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 10rem;
+    text-align: center;
+    animation: render;
+    animation-duration: 1s;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.detailTitle {
+    text-align: left;
+    padding-left: 3rem;
+}
+
+.skillsAndTools {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills{
+    background: lightgray;
+    width: 30vw;
+    height: 30vh;
+    opacity: 0;
+    animation: render;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.tools{
+    background: lightgray;
+    width: 30vw;
+    height: 30vh;
+    opacity: 0;
+    animation: render;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.education {
+    background: lightgray;
+    width: 40vw;
+    height: 70vh;
+    opacity: 0;
+    animation: render;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes render {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
